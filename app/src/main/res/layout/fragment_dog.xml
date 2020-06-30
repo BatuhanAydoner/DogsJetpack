@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="dog"
+            type="com.example.dogsjetpack.model.DogModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.DogFragment">
+
+
+        <ImageView
+            android:id="@+id/imgDog"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:imageUrl="@{dog.url}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBredFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@{dog.bred_for}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgDog" />
+
+        <TextView
+            android:id="@+id/txtBreedGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@{dog.group}"
+            app:layout_constraintEnd_toEndOf="@+id/txtBredFor"
+            app:layout_constraintStart_toStartOf="@+id/txtBredFor"
+            app:layout_constraintTop_toBottomOf="@+id/txtBredFor" />
+
+        <TextView
+            android:id="@+id/txtTemperament"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@{dog.temperament}"
+            app:layout_constraintEnd_toEndOf="@+id/txtBreedGroup"
+            app:layout_constraintStart_toStartOf="@+id/txtBreedGroup"
+            app:layout_constraintTop_toBottomOf="@+id/txtBreedGroup" />
+
+        <TextView
+            android:id="@+id/txtLifeSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@{dog.lifeSpan}"
+            app:layout_constraintEnd_toEndOf="@+id/txtTemperament"
+            app:layout_constraintStart_toStartOf="@+id/txtTemperament"
+            app:layout_constraintTop_toBottomOf="@+id/txtTemperament" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
