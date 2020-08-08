@@ -22,7 +22,3 @@ It is a simple application created with jetpack libraries provided by Google.
 5.[Android Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)<br>
 6.[Android Preferences](https://developer.android.com/guide/topics/ui/settings)<br>
 7.[RxJava](https://github.com/ReactiveX/RxAndroid)
-
-## Project Maintained By
-<img src="https://avatars0.githubusercontent.com/u/58932670?s=460&u=d5a579d9f7f6cebf1c4998366f7540e2d4c85f5c&v=4" width="200" height="200"/>
-Batuhan Aydöner
